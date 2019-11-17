@@ -1,13 +1,9 @@
 @import "ashishdotme-ui/styles/_theme.sass";
 
 .hero {
-  background: #8e2de2;
-  background: -webkit-linear-gradient(
-    to right,
-    #8e2de2,
-    #4a00e0
-  );
-  background: linear-gradient(to right, #8e2de2, #4a00e0);
+  background: #A770EF;
+  background: -webkit-linear-gradient(to right, #FDB99B, #CF8BF3, #A770EF);
+  background: linear-gradient(to right, #FDB99B, #CF8BF3, #A770EF);
 }
 
 .card {
