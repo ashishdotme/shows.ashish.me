@@ -12,6 +12,7 @@ const getDates = (startedDate: string, completedDate: string) => {
           Started on <Moment format='DD/MM/YYYY'>{startedDate}</Moment>
         </span>
       )}
+      {startedDate && completedDate && <br />}
       {completedDate && (
         <span>
           Completed on <Moment format='DD/MM/YYYY'>{completedDate}</Moment>
