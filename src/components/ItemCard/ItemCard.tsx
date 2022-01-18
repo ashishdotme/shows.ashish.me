@@ -4,11 +4,20 @@ import Moment from 'react-moment'
 import { Card } from '@ashishdotme/ui/components/card'
 import { Show } from '../../core/models/show'
 
-const getCompletedDate = (date: string) => {
+const getDates = (startedDate: string, completedDate: string) => {
   return (
-    <span>
-      Completed on <Moment format='DD/MM/YYYY'>{date}</Moment>
-    </span>
+    <div>
+      {startedDate && (
+        <span>
+          Started on <Moment format='DD/MM/YYYY'>{startedDate}</Moment>
+        </span>
+      )}
+      {completedDate && (
+        <span>
+          Completed on <Moment format='DD/MM/YYYY'>{completedDate}</Moment>
+        </span>
+      )}
+    </div>
   )
 }
 
@@ -22,7 +31,7 @@ const ItemCards = (props: { results: Show[] }) => {
             headline={item.title}
             leftSubtitle={item.year}
             rightSubtitle={item.imdbRating}
-            title={getCompletedDate(item.completedDate)}
+            title={getDates(item.startedDate, item.completedDate)}
             tags={item.genre}
           >
             <span>{_.truncate(item.description, { length: 180 })}</span>
