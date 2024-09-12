@@ -7,7 +7,7 @@ export function* fetchItemsList() {
         const response = yield call(ItemsListApi);
         yield put(actions.fetchItemListSuccess(response));
     }
-   catch (error) {
+   catch (error: any) {
        yield put(actions.fetchItemListFailure(error));
    }
 }

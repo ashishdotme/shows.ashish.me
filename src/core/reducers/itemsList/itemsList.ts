@@ -3,7 +3,7 @@ import * as types from '../../actionTypes/itemsList'
 
 
 export type ItemsListState = {
-    itemsList: [],
+    itemsList: any[],
     isLoading: boolean,
     error: any,
 }
