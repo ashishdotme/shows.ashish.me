@@ -5,7 +5,7 @@
   "private": true,
   "dependencies": {
     "@ashishdotme/ui": "^1.1.7",
-    "axios": "^0.18.0",
+    "axios": "^0.28.0",
     "bulma-pagination-react": "^0.1.1",
     "moment": "^2.24.0",
     "node-sass": "^4.13.0",
